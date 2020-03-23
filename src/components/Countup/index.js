@@ -1,68 +1,74 @@
 import React, { useState, useEffect } from 'react'
-import { Row, Col, Typography } from 'antd'
+import { Row, Col, Typography, Progress } from 'antd'
+import isEmpty from 'lodash/isEmpty'
 import { getCountUpValues } from '../../utils/time'
 
 const { Title } = Typography
+const createTimeArray = ({ currTime }) => {
+  if (isEmpty(currTime)) {
+    return []
+  }
+  return [
+    { label: 'WEEK', num: Math.floor(currTime.days / 7), interval: 52 },
+    { label: 'DAY', num: currTime.days % 7, interval: 7 },
+    { label: 'HOUR', num: currTime.hours, interval: 24 },
+    { label: 'MINUTE', num: currTime.minutes, interval: 60 },
+    { label: 'SECOND', num: currTime.seconds, interval: 60 },
+  ]
+}
+
 export default function Countup() {
-  const [time, setTime] = useState({})
+  const [time, setTime] = useState(createTimeArray({ currTime: getCountUpValues() }))
   const isPlural = num => {
     return num > 1
   }
+
+  const timeoutHandler = setTimeout(() => {
+    const currTime = getCountUpValues()
+    setTime(createTimeArray({ currTime }))
+  }, [1000])
+
   useEffect(() => {
-    const timeoutHandler = setTimeout(() => {
-      const currTime = getCountUpValues()
-      setTime(currTime)
-    }, [1000])
     return () => clearTimeout(timeoutHandler)
-  }, [setTime])
+  }, [timeoutHandler])
   return (
-    <div>
-      <Row justify="center">
+    <div style={{ paddingTop: '24px' }}>
+      <Row gutter={[0, 40]} justify="center">
         <Col span={24}>
           <Title align="center" level={1}>
             I entered quarantine:
           </Title>
         </Col>
       </Row>
-      <Row justify="center">
-        <Col offset={2} span={4}>
-          <Title align="center" level={2}>
-            {Math.floor(time.days / 7)}
-          </Title>
-          <Title align="center" level={3}>
-            WEEK
-          </Title>
-        </Col>
-        <Col span={4}>
-          <Title align="center" level={2}>
-            {time.days % 7}
-          </Title>
-          <Title align="center" level={3}>
-            {`DAY${isPlural(time.days % 7) ? 'S' : ''}`}
-          </Title>
-        </Col>
-        <Col span={4}>
-          <Title align="center" level={2}>
-            {time.hours}
-          </Title>
-          <Title align="center" level={3}>
-            {`HOUR${isPlural(time.hours) ? 'S' : ''}`}
-          </Title>
-        </Col>
-        <Col span={4}>
-          <Title align="center" level={2}>
-            {time.minutes}
-          </Title>
-          <Title align="center" level={3}>
-            {`MINUTE${isPlural(time.minutes) ? 'S' : ''}`}
-          </Title>
-        </Col>
-        <Col span={4}>
-          <Title align="center" level={2}>
-            {time.seconds}
-          </Title>
-          <Title align="center" level={3}>
-            {`SECOND${isPlural(time.seconds) ? 'S' : ''}`}
+      <Row gutter={[0, 40]} align="middle" justify="center">
+        {time.map((val, idx) => {
+          return (
+            <Col
+              key={idx}
+              xs={{ span: 24 }}
+              sm={{ span: 8, offset: idx === 0 ? 4 : 0 }}
+              md={{ span: 8, offset: idx === 0 ? 4 : 0 }}
+              lg={{ span: 4, offset: idx === 0 ? 2 : 0 }}
+              xl={{ span: 4, offset: idx === 0 ? 2 : 0 }}
+            >
+              <Progress
+                width="150px"
+                type="circle"
+                percent={(val.num / val.interval) * 100}
+                format={percent =>
+                  `${Math.ceil((percent / 100) * val.interval)} ${val.label}${
+                    isPlural(val.num) ? 'S' : ''
+                  }`
+                }
+              />
+            </Col>
+          )
+        })}
+      </Row>
+      <Row gutter={[0, 40]}>
+        <Col span={24}>
+          <Title align="center" level={1}>
+            ago...
           </Title>
         </Col>
       </Row>
