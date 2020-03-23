@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/quaratine-fun/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/quaratine-fun/static/js/main.24cada2c.chunk.js",
-    "main.js.map": "/quaratine-fun/static/js/main.24cada2c.chunk.js.map",
-    "runtime-main.js": "/quaratine-fun/static/js/runtime-main.8c2c93f2.js",
-    "runtime-main.js.map": "/quaratine-fun/static/js/runtime-main.8c2c93f2.js.map",
-    "static/css/2.1597593f.chunk.css": "/quaratine-fun/static/css/2.1597593f.chunk.css",
-    "static/js/2.327e1847.chunk.js": "/quaratine-fun/static/js/2.327e1847.chunk.js",
-    "static/js/2.327e1847.chunk.js.map": "/quaratine-fun/static/js/2.327e1847.chunk.js.map",
-    "index.html": "/quaratine-fun/index.html",
-    "precache-manifest.65cf4b07eab89cad42b3ac7cb626f936.js": "/quaratine-fun/precache-manifest.65cf4b07eab89cad42b3ac7cb626f936.js",
-    "service-worker.js": "/quaratine-fun/service-worker.js",
-    "static/css/2.1597593f.chunk.css.map": "/quaratine-fun/static/css/2.1597593f.chunk.css.map",
-    "static/css/main.5ecd60fb.chunk.css.map": "/quaratine-fun/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.327e1847.chunk.js.LICENSE.txt": "/quaratine-fun/static/js/2.327e1847.chunk.js.LICENSE.txt"
+    "main.css": "/quarantine-fun/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/quarantine-fun/static/js/main.01afb498.chunk.js",
+    "main.js.map": "/quarantine-fun/static/js/main.01afb498.chunk.js.map",
+    "runtime-main.js": "/quarantine-fun/static/js/runtime-main.ff8e78e0.js",
+    "runtime-main.js.map": "/quarantine-fun/static/js/runtime-main.ff8e78e0.js.map",
+    "static/css/2.1597593f.chunk.css": "/quarantine-fun/static/css/2.1597593f.chunk.css",
+    "static/js/2.f810be6b.chunk.js": "/quarantine-fun/static/js/2.f810be6b.chunk.js",
+    "static/js/2.f810be6b.chunk.js.map": "/quarantine-fun/static/js/2.f810be6b.chunk.js.map",
+    "index.html": "/quarantine-fun/index.html",
+    "precache-manifest.d5db304972d797ef03307a173075f984.js": "/quarantine-fun/precache-manifest.d5db304972d797ef03307a173075f984.js",
+    "service-worker.js": "/quarantine-fun/service-worker.js",
+    "static/css/2.1597593f.chunk.css.map": "/quarantine-fun/static/css/2.1597593f.chunk.css.map",
+    "static/css/main.5ecd60fb.chunk.css.map": "/quarantine-fun/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.f810be6b.chunk.js.LICENSE.txt": "/quarantine-fun/static/js/2.f810be6b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8c2c93f2.js",
+    "static/js/runtime-main.ff8e78e0.js",
     "static/css/2.1597593f.chunk.css",
-    "static/js/2.327e1847.chunk.js",
+    "static/js/2.f810be6b.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.24cada2c.chunk.js"
+    "static/js/main.01afb498.chunk.js"
   ]
 }
