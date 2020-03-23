@@ -45,7 +45,7 @@ export default function Countup() {
           return (
             <Col
               key={idx}
-              xs={{ span: 24 }}
+              xs={{ span: 24, offset: 5 }}
               sm={{ span: 8, offset: idx === 0 ? 4 : 0 }}
               md={{ span: 8, offset: idx === 0 ? 4 : 0 }}
               lg={{ span: 4, offset: idx === 0 ? 2 : 0 }}
