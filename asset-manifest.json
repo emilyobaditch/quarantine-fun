@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/static/js/main.8bf8f5fe.chunk.js",
-    "main.js.map": "/static/js/main.8bf8f5fe.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.2b1e3f5b.js",
-    "runtime-main.js.map": "/static/js/runtime-main.2b1e3f5b.js.map",
-    "static/css/2.41ebe064.chunk.css": "/static/css/2.41ebe064.chunk.css",
-    "static/js/2.621d1a50.chunk.js": "/static/js/2.621d1a50.chunk.js",
-    "static/js/2.621d1a50.chunk.js.map": "/static/js/2.621d1a50.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.f71d74bc00bd8ceaf38c1cd79e34a014.js": "/precache-manifest.f71d74bc00bd8ceaf38c1cd79e34a014.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.41ebe064.chunk.css.map": "/static/css/2.41ebe064.chunk.css.map",
-    "static/css/main.5ecd60fb.chunk.css.map": "/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.621d1a50.chunk.js.LICENSE.txt": "/static/js/2.621d1a50.chunk.js.LICENSE.txt"
+    "main.css": "/quarantine-fun/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/quarantine-fun/static/js/main.b54355ed.chunk.js",
+    "main.js.map": "/quarantine-fun/static/js/main.b54355ed.chunk.js.map",
+    "runtime-main.js": "/quarantine-fun/static/js/runtime-main.ff8e78e0.js",
+    "runtime-main.js.map": "/quarantine-fun/static/js/runtime-main.ff8e78e0.js.map",
+    "static/css/2.bc6f96dc.chunk.css": "/quarantine-fun/static/css/2.bc6f96dc.chunk.css",
+    "static/js/2.8464949e.chunk.js": "/quarantine-fun/static/js/2.8464949e.chunk.js",
+    "static/js/2.8464949e.chunk.js.map": "/quarantine-fun/static/js/2.8464949e.chunk.js.map",
+    "index.html": "/quarantine-fun/index.html",
+    "precache-manifest.44837a7aecc1a01041f487b2d1d1f96c.js": "/quarantine-fun/precache-manifest.44837a7aecc1a01041f487b2d1d1f96c.js",
+    "service-worker.js": "/quarantine-fun/service-worker.js",
+    "static/css/2.bc6f96dc.chunk.css.map": "/quarantine-fun/static/css/2.bc6f96dc.chunk.css.map",
+    "static/css/main.5ecd60fb.chunk.css.map": "/quarantine-fun/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.8464949e.chunk.js.LICENSE.txt": "/quarantine-fun/static/js/2.8464949e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.2b1e3f5b.js",
-    "static/css/2.41ebe064.chunk.css",
-    "static/js/2.621d1a50.chunk.js",
+    "static/js/runtime-main.ff8e78e0.js",
+    "static/css/2.bc6f96dc.chunk.css",
+    "static/js/2.8464949e.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.8bf8f5fe.chunk.js"
+    "static/js/main.b54355ed.chunk.js"
   ]
 }
