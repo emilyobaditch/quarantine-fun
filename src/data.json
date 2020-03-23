@@ -1,0 +1,18 @@
+{ "tv" : 
+    [
+    {
+        "name": "Schitt's Creek", 
+        "grade": "A+", 
+        "commentary": "This is some good TV right here, hilarious - on par with Seinfield (imho). Makes me almost consider moving to the middle of nowhere (keyword: almost)."
+    }, 
+    {
+        "name": "Homeland", 
+        "grade": "A-", 
+        "commentary": "Riveting political drama - giving it a minus because the characters are so hate-able"
+    }, 
+    {
+        "name": "Love is Blind", 
+        "grade": "B+", 
+        "commentary": "I'm a sucker for trash reality TV and this takes the (garbage) cake.  The melodrama from a certian character (cough cough G, cough cough) brings this down. Sorry not sorry. "
+    }
+]}
