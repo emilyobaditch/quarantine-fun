@@ -10,6 +10,7 @@ export const TVSvg = () => {
       y="0px"
       viewBox="0 0 508 508"
       xmlSpace="preserve"
+      fill="#FFF"
     >
       <g>
         <g>
