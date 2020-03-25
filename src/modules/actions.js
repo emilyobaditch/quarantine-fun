@@ -7,7 +7,7 @@ export const todoAddItem = item => ({
 
 export const todoRemoveItem = id => ({
   type: CONSTANTS.TODO_REMOVE_ITEM,
-  id,
+  ...id,
 })
 export const todoReset = () => ({
   type: CONSTANTS.TODO_RESET,

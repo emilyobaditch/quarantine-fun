@@ -28,7 +28,7 @@ const todo = (state = initialState, action) => {
     case TODO_REMOVE_ITEM:
       return {
         ...state,
-        items: state.items.filter(item => item.id === action.id),
+        items: state.items.filter(item => item.id !== action.id),
       }
     case TODO_RESET:
       return {

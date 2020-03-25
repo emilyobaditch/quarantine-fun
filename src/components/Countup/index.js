@@ -12,8 +12,8 @@ const createTimeArray = ({ currTime }) => {
     { label: 'WEEK', num: Math.floor(currTime.days / 7), interval: 52 },
     { label: 'DAY', num: currTime.days % 7, interval: 7 },
     { label: 'HOUR', num: currTime.hours, interval: 24 },
-    { label: 'MINUTE', num: currTime.minutes, interval: 60 },
-    { label: 'SECOND', num: currTime.seconds, interval: 60 },
+    { label: 'MIN', num: currTime.minutes, interval: 60 },
+    { label: 'SEC', num: currTime.seconds, interval: 60 },
   ]
 }
 
@@ -52,7 +52,7 @@ export default function Countup() {
               xl={{ span: 4, offset: idx === 0 ? 2 : 0 }}
             >
               <Progress
-                width="150px"
+                width={150}
                 type="circle"
                 percent={(val.num / val.interval) * 100}
                 format={percent =>
