@@ -22,15 +22,15 @@ export default function Countup() {
   const isPlural = num => {
     return num > 1
   }
-
-  const timeoutHandler = setTimeout(() => {
-    const currTime = getCountUpValues()
-    setTime(createTimeArray({ currTime }))
-  }, [1000])
-
+  const currTime = getCountUpValues()
   useEffect(() => {
-    return () => clearTimeout(timeoutHandler)
-  }, [timeoutHandler])
+    const timeoutHandler = setTimeout(() => {
+      setTime(createTimeArray({ currTime }))
+    }, [1000])
+    return function cleanup() {
+      clearTimeout(timeoutHandler)
+    }
+  }, [currTime])
   return (
     <div style={{ paddingTop: '24px' }}>
       <Row gutter={[0, 40]} justify="center">

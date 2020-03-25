@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { Layout, Menu } from 'antd'
-import Icon, { ClockCircleOutlined } from '@ant-design/icons'
+import Icon, { ClockCircleOutlined, FormOutlined } from '@ant-design/icons'
 import { TVSvg } from './TVSvg'
 import Countup from './components/Countup'
 import TVShow from './components/TVShows'
+import ToDoList from './components/ToDoList'
 
 const { Header, Content, Footer, Sider } = Layout
 
@@ -23,6 +24,8 @@ export default function Home() {
     switch (menuItem) {
       case 'tv':
         return <TVShow />
+      case 'todo':
+        return <ToDoList />
       case 'counter':
       default:
         return <Countup />
@@ -37,6 +40,10 @@ export default function Home() {
           </Menu.Item>
           <Menu.Item key="tv">
             <TVIcon /> <span>TV Reviews</span>
+          </Menu.Item>
+          <Menu.Item key="todo">
+            <FormOutlined />
+            <span>Todo List</span>
           </Menu.Item>
         </Menu>
       </Sider>
